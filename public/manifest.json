@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Mahi Crick Pro",
+  "short_name": "CrickPro",
+  "description": "Premium Android cricket scoring application with live ball-by-ball scoring, real-time cloud broadcast, and offline support.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#070c1e",
+  "theme_color": "#0a1128",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

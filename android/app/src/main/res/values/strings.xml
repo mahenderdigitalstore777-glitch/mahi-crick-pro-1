@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Mahi Crick Pro</string>
+    <string name="title_activity_main">Mahi Crick Pro</string>
+    <string name="package_name">com.mahicrick.pro</string>
+    <string name="custom_url_scheme">com.mahicrick.pro</string>
+</resources>

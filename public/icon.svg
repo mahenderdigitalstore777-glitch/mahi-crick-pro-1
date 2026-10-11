@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1128" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="ball" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)" stroke="#fbbf24" stroke-width="8"/>
+  <!-- Cricket Wickets -->
+  <rect x="180" y="140" width="14" height="200" rx="7" fill="url(#gold)"/>
+  <rect x="249" y="140" width="14" height="200" rx="7" fill="url(#gold)"/>
+  <rect x="318" y="140" width="14" height="200" rx="7" fill="url(#gold)"/>
+  <!-- Bails -->
+  <rect x="165" y="125" width="85" height="12" rx="6" fill="#fde68a"/>
+  <rect x="262" y="125" width="85" height="12" rx="6" fill="#fde68a"/>
+  <!-- Cricket Ball -->
+  <circle cx="256" cy="390" r="48" fill="url(#ball)"/>
+  <path d="M220 390 C 235 360, 277 360, 292 390" stroke="#ffffff" stroke-width="4" stroke-dasharray="6,4" fill="none"/>
+  <path d="M220 390 C 235 420, 277 420, 292 390" stroke="#ffffff" stroke-width="4" stroke-dasharray="6,4" fill="none"/>
+</svg>

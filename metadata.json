@@ -1,0 +1,6 @@
+{
+  "name": "Mahi Crick Pro",
+  "description": "Premium Android cricket scoring application with local-first storage, ball-by-ball scoring engine, team and player management, and comprehensive scorecards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

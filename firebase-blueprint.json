@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "Match": {
+      "title": "Match",
+      "description": "Cricket match document with live innings state and ball by ball deliveries",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the match"
+        },
+        "title": {
+          "type": "string",
+          "description": "Display title of the cricket match"
+        },
+        "date": {
+          "type": "string",
+          "description": "Date of the match"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["live", "innings_break", "completed", "abandoned"],
+          "description": "Current status of the match"
+        },
+        "oversPerInnings": {
+          "type": "number",
+          "description": "Overs per innings"
+        },
+        "teamAId": {
+          "type": "string",
+          "description": "Team A ID"
+        },
+        "teamBId": {
+          "type": "string",
+          "description": "Team B ID"
+        }
+      },
+      "required": ["id", "title", "status"]
+    },
+    "Tournament": {
+      "title": "Tournament",
+      "description": "Cricket tournament document with standings, teams, and matches",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the tournament"
+        },
+        "name": {
+          "type": "string",
+          "description": "Tournament title"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["upcoming", "ongoing", "completed"],
+          "description": "Status of tournament"
+        }
+      },
+      "required": ["id", "name", "status"]
+    }
+  },
+  "firestore": {
+    "/matches/{matchId}": {
+      "schema": "Match",
+      "description": "Live match broadcast document read by spectators and written by scorers"
+    },
+    "/tournaments/{tournamentId}": {
+      "schema": "Tournament",
+      "description": "Live tournament broadcast document with points table and fixtures"
+    }
+  }
+}

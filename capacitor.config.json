@@ -1,0 +1,9 @@
+{
+  "appId": "com.mahicrick.pro",
+  "appName": "Mahi Crick Pro",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}

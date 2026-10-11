@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Public live matches for scorers and spectators
+    match /matches/{matchId} {
+      allow read: if true;
+      allow create, update: if request.resource.data.id is string;
+      allow delete: if true;
+    }
+
+    // Public tournaments for live points table and spectators
+    match /tournaments/{tournamentId} {
+      allow read: if true;
+      allow create, update: if request.resource.data.id is string;
+      allow delete: if true;
+    }
+  }
+}
